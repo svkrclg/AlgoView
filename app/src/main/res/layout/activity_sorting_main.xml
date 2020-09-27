@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sorting.SortingMainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:max="23"
+        android:progress="1"
+        app:layout_constraintBottom_toTopOf="@+id/play_pause"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout" />
+
+    <ImageButton
+        android:id="@+id/play_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_green"
+        android:src="@drawable/play_image_button"
+        app:layout_constraintBottom_toBottomOf="@+id/repeat"
+        app:layout_constraintEnd_toStartOf="@+id/next_step"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/repeat"
+        app:layout_constraintTop_toTopOf="@+id/repeat"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/reset_sort_image_button"
+        app:layout_constraintBottom_toTopOf="@+id/bubble_sort"
+        app:layout_constraintEnd_toStartOf="@+id/play_pause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/next_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/next_step_image_button"
+        app:layout_constraintBottom_toTopOf="@+id/bubble_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/play_pause" />
+
+    <Button
+        android:id="@+id/bubble_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sorting_alog_button_bg"
+        android:onClick="sortingMethodSelected"
+        android:padding="10dp"
+        android:text="Bubble Sort"
+        app:layout_constraintBaseline_toBaselineOf="@+id/insertion_sort"
+        app:layout_constraintEnd_toStartOf="@+id/selection_sort"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/insertion_sort" />
+
+    <Button
+        android:id="@+id/insertion_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/sorting_alog_button_bg"
+        android:onClick="sortingMethodSelected"
+        android:padding="10dp"
+        android:text="Insertion Sort"
+        app:layout_constraintBottom_toTopOf="@+id/mege_sort"
+        app:layout_constraintEnd_toStartOf="@+id/bubble_sort"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selection_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sorting_alog_button_bg"
+        android:onClick="sortingMethodSelected"
+        android:padding="10dp"
+        android:text="Selection sort"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bubble_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bubble_sort" />
+
+    <Button
+        android:id="@+id/mege_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/sorting_alog_button_bg"
+        android:onClick="sortingMethodSelected"
+        android:text="Merge Sort"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/heap_sort"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/heap_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sorting_alog_button_bg"
+        android:onClick="sortingMethodSelected"
+        android:text="heap sort"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mege_sort"
+        app:layout_constraintEnd_toStartOf="@+id/quick_sort"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mege_sort" />
+
+    <Button
+        android:id="@+id/quick_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/sorting_alog_button_bg"
+        android:onClick="sortingMethodSelected"
+        android:text="quick sort"
+        app:layout_constraintBaseline_toBaselineOf="@+id/heap_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/heap_sort" />
+</androidx.constraintlayout.widget.ConstraintLayout>

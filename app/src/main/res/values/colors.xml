@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="source_color">#D64CAF50</color>
+    <color name="destination_color">#CBF44336</color>
+    <color name="wall_color">#8D000000</color>
+    <color name="empty_color">#F5F5F5</color>
+    <color name="path_color">#BDFFEB3B</color>
+    <color name="travelled_color">#699C27B0</color>
+    <color name="stroke_color">#AB000000</color>
+    <color name="bar_color">#27CBE0</color>
+    <color name="bar_check">#8BC34A</color>
+    <color name="sorted_bar">#CD9C27B0</color>
+    <color name="swap_bar_color">#F44336</color>
+    <color name="bar_examining">#9E9D24</color>
+    <color name="disable_button">@android:color/darker_gray</color>
+</resources>

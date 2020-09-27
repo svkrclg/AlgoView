@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1085858108206",
+    "firebase_url": "https://algoview-1eab3.firebaseio.com",
+    "project_id": "algoview-1eab3",
+    "storage_bucket": "algoview-1eab3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085858108206:android:01b87ecdb3671feef9a0bf",
+        "android_client_info": {
+          "package_name": "com.rival.algoview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085858108206-anumf346ntdeavqheijmv4dchjt6knqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWDRbWnfDcySw_6FdIqqTV_h9K5lM9Av4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085858108206-anumf346ntdeavqheijmv4dchjt6knqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
